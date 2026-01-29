@@ -11,5 +11,6 @@ group :development do
   # RBS requires Ruby >= 3.0
   if RUBY_VERSION >= "3.0.0"
     gem "rbs", "~> 3.4.0"
+    gem "tsort" if RUBY_VERSION >= "4.0"
   end
 end
